@@ -3,7 +3,7 @@
  * @returns {Function}
  */
 const once = (fn) => {
-	var counter = 0
+	var counter = 0;
 	return function(...args) {
 		counter++;
 		if (counter > 1) {
