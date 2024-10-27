@@ -8,6 +8,8 @@ def somaImposto(taxa, custo):
   novo_valor = ((taxa / 100) * custo) + custo
   return novo_valor
 
+somaImposto2 = lambda taxa, custo: ((taxa / 100) * custo) + custo
+
 taxa = int(input("Digite a taxa de imposto sobre o produto(%): "))
 custo = float(input("Digite o valor do produto: "))
-print(f"O novo valor do produto é R${somaImposto(taxa, custo):.2f}")
+print(f"O novo valor do produto é R${somaImposto2(taxa, custo):.2f}")
