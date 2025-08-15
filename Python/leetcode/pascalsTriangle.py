@@ -13,3 +13,8 @@ class Solution:
                     temp.append(resultado[i - 1][j] + resultado[i - 1][j - 1])
             resultado.append(temp)
         return resultado
+
+
+s = Solution()
+i = int(input("Digite a coluna do triangulo de pascal: "))
+print(s.generate(i))
